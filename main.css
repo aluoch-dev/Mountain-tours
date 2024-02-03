@@ -74,6 +74,7 @@ body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  padding: 0 320px;
 }
 
 .nav {
@@ -145,12 +146,11 @@ body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  padding: 16px 120px;
+  padding: 0 320px;
   margin: 16px;
 }
 
 .history-nav {
-  float: right;
   display:block;
   text-align: center;
 }
@@ -167,18 +167,8 @@ body {
 }
 
 .double-logo {
-  float: left;
   position: relative;
   width: 164px;
-}
-
-.text-4 {
-  color: #414f6b;
-  font-size: 0.75rem; 
-  font-style: italic;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 .slider-background {
@@ -384,8 +374,8 @@ body {
 .tab-navs {
   display: flex;
   width: 100%;
-  padding: 8px 120px;
   background-color: #414f6b;
+  padding: 8px 320px;
 }
 
 .tab-link {
@@ -493,8 +483,8 @@ body {
 .footer {
   width: 100%;
   background: #414f6b;
-  padding: 16px 120px;
   box-sizing: border-box;
+  padding: 16px 320px;
 }
 
 .footer-content {
@@ -503,14 +493,8 @@ body {
   align-items: center;
 }
 
-.footer-logo {
-  width: 50%;
-}
-
 .footer-copyright {
-  width: 50%;
-  float: right;
-  text-align: end;
+  text-align: center;
   color: #63769d;
   font-size: 0.75rem; 
   font-style: italic;
@@ -523,6 +507,7 @@ body {
   div.tab-navs {
     display: none;
   }
+
   div.tab-content-class {
     display: none;
   }
@@ -548,9 +533,28 @@ body {
     width: 400px;
   }
 
+
+  div.navbar {
+    padding: 0 24px;
+  }
+
+  div.history-navigation {
+    padding: 0 24px;
+  }
+
+  footer {
+    padding: 16px;
+  }
+
+  div.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-/* If the screen size is 600px wide or less, hide the element */
+
 @media only screen and (min-width: 600px) {
   div.accordion-content {
     display: none;
@@ -562,6 +566,27 @@ body {
 
   div.thumbnails {
     display: block;
+  }
+
+  div.navbar {
+    padding: 0 32px;
+  }
+
+  div.history-navigation {
+    padding: 0 32px;
+  }
+
+  div.tab-navs {
+    padding: 8px 32px;
+  }
+
+  footer {
+    padding: 16px;
+  }
+
+  div.footer-content {
+    display: flex;
+    flex-direction: column;
   }
 
 }
